@@ -46,3 +46,8 @@ group :development do
 end
 
 ENV['NOKOGIRI_USE_SYSTEM_LIBRARIES'] = 'YES'
+
+group :production do
+  gem 'pg','0.15.1'
+  gem 'rails_12factor','0.0.2'
+end
